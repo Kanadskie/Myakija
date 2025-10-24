@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Myakija/static/css/main.320182b3.css",
-    "main.js": "/Myakija/static/js/main.8098448e.js",
+    "main.css": "/Myakija/static/css/main.93439897.css",
+    "main.js": "/Myakija/static/js/main.b4ae7672.js",
     "static/media/line.jpg": "/Myakija/static/media/line.0126cd45b441f7d02019.jpg",
     "static/media/logo.png": "/Myakija/static/media/logo.9ea26b25194478216c02.png",
     "static/media/washing.jpg": "/Myakija/static/media/washing.57a541985e511baeed7f.jpg",
@@ -17,11 +17,11 @@
     "static/media/cristal_05.jpg": "/Myakija/static/media/cristal_05.b8b78d4d3e32c4b94bf4.jpg",
     "static/media/kashinka_05.jpg": "/Myakija/static/media/kashinka_05.b3c837c4a231e6a00137.jpg",
     "index.html": "/Myakija/index.html",
-    "main.320182b3.css.map": "/Myakija/static/css/main.320182b3.css.map",
-    "main.8098448e.js.map": "/Myakija/static/js/main.8098448e.js.map"
+    "main.93439897.css.map": "/Myakija/static/css/main.93439897.css.map",
+    "main.b4ae7672.js.map": "/Myakija/static/js/main.b4ae7672.js.map"
   },
   "entrypoints": [
-    "static/css/main.320182b3.css",
-    "static/js/main.8098448e.js"
+    "static/css/main.93439897.css",
+    "static/js/main.b4ae7672.js"
   ]
 }
