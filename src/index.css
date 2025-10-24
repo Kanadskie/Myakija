@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: #b3c1a7;
+    --secondary: #e6b483;
+    --accent: #849c8c;
+    --text: #252422;
+    --special: #f6edce;
+    --bg_special: #f8f9f7;
+  }
+
+  html {
+    font-family: "Oswald", sans-serif;
+  }
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #252422;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
