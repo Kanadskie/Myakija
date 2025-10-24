@@ -19,7 +19,7 @@ const CartItem: React.FC<CartItemProps> = ({ item, onRemove, onUpdateQuantity })
       className="bg-white p-3 md:p-6 rounded-lg shadow-md mb-4 border border-[#b3c1a7]"
     >
       <div className="flex items-center space-x-4">
-        <div className="w-16 h-20 items-center justify-center">
+        <div className="flex w-16 h-20 items-center justify-center">
           <img src={item.product.image} alt="product"></img>
         </div>
         
