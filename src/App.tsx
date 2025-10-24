@@ -1,5 +1,5 @@
 import React, { useLayoutEffect } from 'react';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import Header from './components/Header';
@@ -26,7 +26,7 @@ export function ScrollToTop() {
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <Router basename="/Myakija">
+      <HashRouter>
         <ScrollToTop />
         <div className="min-h-screen bg-white flex flex-col">
           <Header />
