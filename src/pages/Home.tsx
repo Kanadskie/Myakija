@@ -19,11 +19,12 @@ const Home: React.FC = () => {
     <div>
       {/* Hero Section */}
      <section className="relative h-screen overflow-hidden">
-        <div className="absolute inset-0 bg-fixed bg-cover bg-center" style={{ backgroundImage: `url(${hero})` }}></div>
+        <div className="absolute inset-0 lg:bg-fixed bg-cover bg-center" style={{ backgroundImage: `url(${hero})` }}></div>
         <div className="absolute inset-0"
             style={{
             background: 'linear-gradient(135deg, rgba(185, 188, 181, 0.95) 0%, rgba(131, 136, 132, 0.85) 90%)'
-          }}></div>
+          }}>
+        </div>
         
         <div className="relative z-10 h-full flex flex-col items-center justify-center container mx-auto px-4 text-center">
           <motion.img 
@@ -198,7 +199,7 @@ const Home: React.FC = () => {
                 key={step.step}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.5 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="relative group"
                 whileHover={{ y: -4, scale: 1 }}
                 viewport={{ once: true }}

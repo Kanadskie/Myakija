@@ -26,7 +26,7 @@ export function ScrollToTop() {
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <Router>
+      <Router basename="/Myakija">
         <ScrollToTop />
         <div className="min-h-screen bg-white flex flex-col">
           <Header />

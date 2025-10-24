@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.320182b3.css",
-    "main.js": "/static/js/main.02c9cc9b.js",
-    "static/media/line.jpg": "/static/media/line.0126cd45b441f7d02019.jpg",
-    "static/media/logo.png": "/static/media/logo.9ea26b25194478216c02.png",
-    "static/media/washing.jpg": "/static/media/washing.57a541985e511baeed7f.jpg",
-    "static/media/branding.jpg": "/static/media/branding.06de83919a424209e08d.jpg",
-    "static/media/packing.jpg": "/static/media/packing.cbaa2d8db00eef620008.jpg",
-    "static/media/area.jpg": "/static/media/area.cdc28dffb77c9bd847b8.jpg",
-    "static/media/delivery.jpg": "/static/media/delivery.44057818fed91bf4ee81.jpg",
-    "static/media/test.jpg": "/static/media/test.e272ee9af0e913929028.jpg",
-    "static/media/kashinka_033.jpg": "/static/media/kashinka_033.3bc49c754db537736772.jpg",
-    "static/media/mineral_15.jpg": "/static/media/mineral_15.a9be44ceaae21a3b1875.jpg",
-    "static/media/cristal_15.jpg": "/static/media/cristal_15.ccbbba25793edddc4a92.jpg",
-    "static/media/mineral_05.jpg": "/static/media/mineral_05.902832e7a8062a4962dc.jpg",
-    "static/media/cristal_05.jpg": "/static/media/cristal_05.b8b78d4d3e32c4b94bf4.jpg",
-    "static/media/kashinka_05.jpg": "/static/media/kashinka_05.b3c837c4a231e6a00137.jpg",
-    "index.html": "/index.html",
-    "main.320182b3.css.map": "/static/css/main.320182b3.css.map",
-    "main.02c9cc9b.js.map": "/static/js/main.02c9cc9b.js.map"
+    "main.css": "/Myakija/static/css/main.2672956e.css",
+    "main.js": "/Myakija/static/js/main.e78571a1.js",
+    "static/media/line.jpg": "/Myakija/static/media/line.0126cd45b441f7d02019.jpg",
+    "static/media/logo.png": "/Myakija/static/media/logo.9ea26b25194478216c02.png",
+    "static/media/washing.jpg": "/Myakija/static/media/washing.57a541985e511baeed7f.jpg",
+    "static/media/branding.jpg": "/Myakija/static/media/branding.06de83919a424209e08d.jpg",
+    "static/media/packing.jpg": "/Myakija/static/media/packing.cbaa2d8db00eef620008.jpg",
+    "static/media/area.jpg": "/Myakija/static/media/area.cdc28dffb77c9bd847b8.jpg",
+    "static/media/delivery.jpg": "/Myakija/static/media/delivery.44057818fed91bf4ee81.jpg",
+    "static/media/test.jpg": "/Myakija/static/media/test.e272ee9af0e913929028.jpg",
+    "static/media/kashinka_033.jpg": "/Myakija/static/media/kashinka_033.3bc49c754db537736772.jpg",
+    "static/media/mineral_15.jpg": "/Myakija/static/media/mineral_15.a9be44ceaae21a3b1875.jpg",
+    "static/media/cristal_15.jpg": "/Myakija/static/media/cristal_15.ccbbba25793edddc4a92.jpg",
+    "static/media/mineral_05.jpg": "/Myakija/static/media/mineral_05.902832e7a8062a4962dc.jpg",
+    "static/media/cristal_05.jpg": "/Myakija/static/media/cristal_05.b8b78d4d3e32c4b94bf4.jpg",
+    "static/media/kashinka_05.jpg": "/Myakija/static/media/kashinka_05.b3c837c4a231e6a00137.jpg",
+    "index.html": "/Myakija/index.html",
+    "main.2672956e.css.map": "/Myakija/static/css/main.2672956e.css.map",
+    "main.e78571a1.js.map": "/Myakija/static/js/main.e78571a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.320182b3.css",
-    "static/js/main.02c9cc9b.js"
+    "static/css/main.2672956e.css",
+    "static/js/main.e78571a1.js"
   ]
 }

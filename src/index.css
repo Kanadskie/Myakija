@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 768px) {
+  .mobile-optimize {
+    -webkit-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+  }
+}
+
 @layer base {
   :root {
     --primary: #b3c1a7;
