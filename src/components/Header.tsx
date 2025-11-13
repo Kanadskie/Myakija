@@ -140,7 +140,7 @@ const Header: React.FC = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 onClick={closeMobileMenu}
-                className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 lg:hidden"
+                className="fixed inset-0 bg-black/50 backdrop-blur-sm [-webkit-backdrop-filter:blur(8px)] [backdrop-filter:blur(8px)] z-40 lg:hidden"
               />
               
               {/* Боковое меню в стиле glass */}
