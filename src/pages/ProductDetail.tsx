@@ -49,8 +49,8 @@ const ProductDetail: React.FC = () => {
 
   return (
     <div className="container mx-auto mt-20 px-4 py-8">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="max-h-[480px] bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 border border-[#b3c1a7] group cursor-pointer">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="md:col-span-1 max-h-[480px] bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 border border-[#b3c1a7] group cursor-pointer">
              {/* Контейнер для изображения с эффектом стекла */}
              <div className="w-full h-full relative overflow-hidden bg-gradient-to-br from-white-100 to-white-200">
                <div className="flex items-center justify-center">
@@ -58,7 +58,7 @@ const ProductDetail: React.FC = () => {
                    <img 
                      className={`max-h-[480px] object-cover transition-all duration-700 ease-out ${
                        imageLoaded 
-                         ? 'filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-105 group-hover:scale-101' 
+                         ? '' 
                          : 'opacity-0'
                      }`} 
                      src={`${product.image}`} 
@@ -86,7 +86,7 @@ const ProductDetail: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="space-y-6"
+          className="lg:col-span-2 space-y-6"
         >
           <div>
             <h1 className="text-4xl font-normal text-[#252422] mb-2 tracking-tight">{product.name}</h1>
@@ -96,7 +96,7 @@ const ProductDetail: React.FC = () => {
           <div className="flex flex-col space-y-4 md:space-y-3">
             <div>
               <h3 className="font-normal text-[#252422] tracking-wide">Химический состав:</h3>
-              <p className="text-[#252422] font-light tracking-wide">{product.composition}</p>
+              <p className="text-[#252422] lg:max-w-[550px] font-light tracking-wide">{product.composition}</p>
             </div>
             <div>
               <h3 className="font-normal text-[#252422] tracking-wide">Общая минерализация:</h3>

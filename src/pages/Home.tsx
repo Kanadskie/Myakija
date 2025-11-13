@@ -36,13 +36,13 @@ const Home: React.FC = () => {
             alt="logo"
           ></motion.img>
           <motion.h1 
-            className="text-3xl dark:text-gray dark:text-shadow-2xs uppercase mb-6 tracking-light leading-tight"
+            className="text-3xl md:text-5xl dark:text-gray dark:text-shadow-2xs mb-6 tracking-light leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.2 }}
             viewport={{ once: true }}
           >
-            Чистота из самого сердца земли
+            Исконная чистота земли
           </motion.h1>
           <motion.p 
             className="text-xl font-light mb-8 max-w-2xl mx-auto tracking-wide leading-relaxed"
@@ -201,7 +201,7 @@ const Home: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 className="relative group"
-                whileHover={{ y: -4, scale: 1 }}
+                whileHover={{ y: -4, scale: 1, transition: {duration: 0.4, delay: 0}}}
                 viewport={{ once: true }}
               >
                 <div className="bg-[#f8f9f7] rounded-lg shadow-md border border-[#b3c1a7] p-6 text-center h-full transition-all duration-300">

@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           {/* Навигация */}
           <div className="hidden md:block text-center md:text-left">
             <h4 className="font-normal mb-4 tracking-wide text-white drop-shadow-lg text-lg">Навигация</h4>
-            <ul className="space-y-3 uppercase">
+            <ul className="space-y-3">
               <li>
                 <Link 
                   to="/" 

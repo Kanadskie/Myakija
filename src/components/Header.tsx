@@ -22,14 +22,14 @@ const Header: React.FC = () => {
     <>
       <header className="fixed top-0 left-0 right-0 z-50">
         {/* Glass morphism background */}
-        <div className="absolute inset-0 bg-[#b3c1a7]/80 backdrop-blur-md shadow-lg"></div>
+        <div className="absolute inset-0 bg-[#b3c1a7]/80 backdrop-blur-sm shadow-lg [-webkit-backdrop-filter:blur(8px)] [backdrop-filter:blur(8px)] bg-opacity-80"></div>
         
         <div className="container mx-auto px-4 py-2 relative z-10">
           
           <div className="flex justify-between items-center">
             <Link to="/" className="relative">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <div className="bg-white/20 backdrop-blur-sm text-[#252422] px-2 py-2 rounded-lg flex items-center space-x-2 font-light uppercase tracking-widest text-[18px] border border-white/30 shadow-lg hover:bg-white/30 transition-all duration-300">
+                  <div className="bg-white/20 backdrop-blur-sm text-[#252422] px-2 py-2 rounded-lg flex items-center space-x-2 font-light tracking-widest text-[18px] border border-white/30 shadow-lg hover:bg-white/30 transition-all duration-300">
                     <HomeIcon />
                   </div>
                 </motion.div>
@@ -38,52 +38,64 @@ const Header: React.FC = () => {
             {/* Десктопная навигация с активными стилями */}
             <nav className="hidden lg:flex space-x-6 lg:space-x-12">
               <NavLink 
-                to="/about" 
-                className={({ isActive }) => 
-                  `text-[22px] font-light uppercase tracking-widest py-2 px-4 rounded-lg backdrop-blur-sm transition-all duration-300 ${
-                    isActive 
-                      ? 'bg-white/10 text-white/80' 
-                      : 'text-[#252422] hover:bg-white/10 hover:text-white/80'
-                  }`
-                }
+                  to="/about" 
+                  className={({ isActive }) =>
+                      `text-[22px] font-light tracking-widest py-2 transition-all duration-200 relative group`
+                  }
               >
-                О бренде
+                  {({ isActive }) => (
+                      <>
+                          О бренде
+                          <span className={`absolute bottom-[5px] left-0 h-[2px] bg-[#252422]/80 rounded transition-all duration-200 ${
+                              isActive ? "w-full" : "w-0 group-hover:w-full"
+                          }`}></span>
+                      </>
+                  )}
               </NavLink>
               <NavLink 
-                to="/products" 
-                className={({ isActive }) => 
-                  `text-[22px] font-light uppercase tracking-widest py-2 px-4 rounded-lg backdrop-blur-sm transition-all duration-300 ${
-                    isActive 
-                      ? 'bg-white/10 text-white/80' 
-                      : 'text-[#252422] hover:bg-white/10 hover:text-white/80'
-                  }`
-                }
+                  to="/products" 
+                  className={({ isActive }) =>
+                      `text-[22px] font-light tracking-widest py-2 transition-all duration-200 relative group`
+                  }
               >
-                Продукция
+                  {({ isActive }) => (
+                      <>
+                          Продукция
+                          <span className={`absolute bottom-[5px] left-0 h-[2px] bg-[#252422]/80 rounded transition-all duration-200 ${
+                              isActive ? "w-full" : "w-0 group-hover:w-full"
+                          }`}></span>
+                      </>
+                  )}
               </NavLink>
               <NavLink 
-                to="/services" 
-                className={({ isActive }) => 
-                  `text-[22px] font-light uppercase tracking-widest py-2 px-4 rounded-lg backdrop-blur-sm transition-all duration-300 ${
-                    isActive 
-                      ? "bg-white/10 text-white/80"
-                      : "text-[#252422] hover:bg-white/10 hover:text-white/80"
-                  }`
-                }
+                  to="/services" 
+                  className={({ isActive }) =>
+                      `text-[22px] font-light tracking-widest py-2 transition-all duration-200 relative group`
+                  }
               >
-                Услуги
+                  {({ isActive }) => (
+                      <>
+                          Услуги
+                          <span className={`absolute bottom-[5px] left-0 h-[2px] bg-[#252422]/80 rounded transition-all duration-200 ${
+                              isActive ? "w-full" : "w-0 group-hover:w-full"
+                          }`}></span>
+                      </>
+                  )}
               </NavLink>
               <NavLink 
-                to="/contacts" 
-                className={({ isActive }) => 
-                  `text-[22px] font-light uppercase tracking-widest py-2 px-4 rounded-lg backdrop-blur-sm transition-all duration-300 ${
-                    isActive 
-                      ? "bg-white/10 text-white/80"
-                      : "text-[#252422] hover:bg-white/10 hover:text-white/80"
-                  }`
-                }
+                  to="/contacts" 
+                  className={({ isActive }) =>
+                      `text-[22px] font-light tracking-widest py-2 transition-all duration-200 relative group`
+                  }
               >
-                Контакты
+                  {({ isActive }) => (
+                      <>
+                          Контакты
+                          <span className={`absolute bottom-[5px] left-0 h-[2px] bg-[#252422]/80 rounded transition-all duration-200 ${
+                              isActive ? "w-full" : "w-0 group-hover:w-full"
+                          }`}></span>
+                      </>
+                  )}
               </NavLink>
             </nav>
 
@@ -91,7 +103,7 @@ const Header: React.FC = () => {
               {/* Корзина */}
               <Link to="/cart" className="relative">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <div className="bg-white/20 backdrop-blur-sm text-[#252422] px-2 py-2 rounded-lg flex items-center space-x-2 font-light uppercase tracking-widest text-[18px] border border-white/30 shadow-lg hover:bg-white/30 transition-all duration-300">
+                  <div className="bg-white/20 backdrop-blur-sm text-[#252422] px-2 py-2 rounded-lg flex items-center space-x-2 font-light tracking-widest text-[18px] border border-white/30 shadow-lg hover:bg-white/30 transition-all duration-300">
                     <CartIcon />
                     <span className="hidden sm:inline">Корзина</span>
                     {totalItems > 0 && (
@@ -161,7 +173,7 @@ const Header: React.FC = () => {
                       to="/about"
                       onClick={closeMobileMenu}
                       className={({ isActive }) => 
-                        `block font-light uppercase tracking-widest py-4 px-4 rounded-lg backdrop-blur-sm border border-white/20 transition-all duration-300 ${
+                        `block font-light tracking-widest py-4 px-4 rounded-lg backdrop-blur-sm border border-white/20 transition-all duration-300 ${
                           isActive 
                             ? 'bg-white/20 text-white/80' 
                             : 'bg-white/10 text-white hover:bg-white/20 hover:text-white/80'
@@ -174,7 +186,7 @@ const Header: React.FC = () => {
                       to="/products"
                       onClick={closeMobileMenu}
                       className={({ isActive }) => 
-                        `block font-light uppercase tracking-widest py-4 px-4 rounded-lg backdrop-blur-sm border border-white/20 transition-all duration-300 ${
+                        `block font-light tracking-widest py-4 px-4 rounded-lg backdrop-blur-sm border border-white/20 transition-all duration-300 ${
                           isActive 
                             ? 'bg-white/20 text-white/80' 
                             : 'bg-white/10 text-white hover:bg-white/20 hover:text-white/80'
@@ -187,7 +199,7 @@ const Header: React.FC = () => {
                       to="/services"
                       onClick={closeMobileMenu}
                       className={({ isActive }) => 
-                        `block font-light uppercase tracking-widest py-4 px-4 rounded-lg backdrop-blur-sm border border-white/20 transition-all duration-300 ${
+                        `block font-light tracking-widest py-4 px-4 rounded-lg backdrop-blur-sm border border-white/20 transition-all duration-300 ${
                           isActive 
                             ? 'bg-white/20 text-white/80' 
                             : 'bg-white/10 text-white hover:bg-white/20 hover:text-white/80'
@@ -200,7 +212,7 @@ const Header: React.FC = () => {
                       to="/contacts"
                       onClick={closeMobileMenu}
                       className={({ isActive }) => 
-                        `block font-light uppercase tracking-widest py-4 px-4 rounded-lg backdrop-blur-sm border border-white/20 transition-all duration-300 ${
+                        `block font-light tracking-widest py-4 px-4 rounded-lg backdrop-blur-sm border border-white/20 transition-all duration-300 ${
                           isActive 
                             ? 'bg-white/20 text-white/80' 
                             : 'bg-white/10 text-white hover:bg-white/20 hover:text-white/80'

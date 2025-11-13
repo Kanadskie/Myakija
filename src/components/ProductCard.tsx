@@ -53,9 +53,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <div className="flex items-center justify-center">
           <div className="items-center justify-center relative">
             <img 
-              className={`max-h-[280px] object-cover transition-all duration-700 ease-out ${
+              className={`max-h-[175px] object-cover transition-all duration-700 ease-out ${
                 imageLoaded 
-                  ? 'filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 group-hover:contrast-100 group-hover:brightness-105 group-hover:scale-101' 
+                  ? '' 
                   : 'opacity-0'
               }`} 
               src={`${product.image}`} 
@@ -79,7 +79,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         {/* <div className="absolute bottom-0 right-0 w-16 h-16 bg-gradient-to-tl from-white/30 to-transparent rounded-tl-full z-15 group-hover:opacity-0 transition-opacity duration-700" /> */}
       </div>
       
-      <div className="bg-[#f8f9f7] p-4">
+      <div className="bg-[#f8f9f7] p-3">
         <h3 className="text-lg font-normal text-[#252422] mb-2 tracking-wide">
           {product.name}
         </h3>
